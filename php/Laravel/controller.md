@@ -124,6 +124,10 @@ class コントローラ名 extends Controller
 - `$request->merge(連想配列)`
   - フォームの送信などで送られる値に新しい値を追加する
   - `$request->連想配列のkey` で value を呼び出せる
+- `$request->cookie( key )`
+  - 保存されている cookie を取得
+- `$request->hasCookie( key )`
+  - cookie の存在可否判定
 
 ### Response の主なメソッド
 
@@ -133,3 +137,10 @@ class コントローラ名 extends Controller
   - コンテンツを取得
 - `$response->setContent(value)`
   - コンテンツを設定
+- `$response->cookie( key, value, minutes)`
+  - クッキーを新たに保存
+  - controller から返却しないと保存されない点に注意
+- `$response->withErrors( MessageProvider )`
+  - エラーメッセージを付与してリダイレクト
+- `$response->withCookie( cookie array)`
+  - 複数の cookie を付与してリダイレクト
