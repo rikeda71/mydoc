@@ -1,6 +1,7 @@
 # Laravel
 
 - [ディレクトリ構成](dir-structure.md)
+- [Routing](routing.md)
 
 ## Memo
 
