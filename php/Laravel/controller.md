@@ -87,7 +87,6 @@ class SingleActionController extends Controller
 ```
 
 ```php:routes/web.php
-//
 Route:get('single', 'App\Http\Controllers\SingleActionController')
 ```
 
@@ -122,6 +121,9 @@ class コントローラ名 extends Controller
   - アクセスしたURLをクエリ文字列を含めて返す。
 - `$request->path()`
   - ドメイン下のパス部分を返す
+- `$request->merge(連想配列)`
+  - フォームの送信などで送られる値に新しい値を追加する
+  - `$request->連想配列のkey` で value を呼び出せる
 
 ### Response の主なメソッド
 
