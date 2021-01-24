@@ -29,11 +29,28 @@ return [
 
 ### DBクラス
 
-- select
+- select, insert, update, delete を SQL を使って操作できる
 
 ```php
 use Illuminate\Support\Facades\DB;
 ...
 $items = DB::select('select * from people');
-...
+
+$param = [
+  'id' => 1,
+  'name' => 'taro',
+  'mail' => 'example.com'
+  'age' => 24,
+]
+DB::insert('insert into people (name, mail, age) values (:name, :mail, :age)', $param);
+DB::update('update people set name = :name, mail = :mail, age = :age where id = :id', $param);
+DB::delete('delete from people where id = :id', $param);
 ```
+
+- **パラメータ結合**を使って以下のように書ける
+  - `:id` はパラメータの値をはめ込むプレースホルダ
+
+  ```php
+  $param = ['id' => $request->id];
+  $items = DB::select('select * from people where id = :id', $param);
+  ```
