@@ -7,6 +7,7 @@
 - [Middleware](middleware.md)
 - [Validation](validation.md)
 - [Database](database.md)
+- [Eloquent ORM](eloquent.md)
 
 ## Memo
 
@@ -16,4 +17,5 @@
 curl -s https://laravel.build/example-app | bash  # "example-app" はなんでもいい
 cd example-app
 ./vendor/bin/sail up  # 起動に必要な docker の設定が走り、docker-compose 上で Laravel が動作
+# ただし、DB周りのコマンド(migration, seeding)では `php artisan` ではなく `./vendor/bin/sail artisan ~~` を使う
 ```
