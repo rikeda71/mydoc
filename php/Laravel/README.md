@@ -10,7 +10,7 @@
 - [Eloquent ORM](eloquent.md)
 - [RESTful API](restapi.md)
 - [Session](session.md)
-- [pagenation](pagenation.md)
+- [pagination](pagination.md)
 
 ## Memo
 
