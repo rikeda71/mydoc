@@ -10,6 +10,8 @@
 - Run anything
   - Ctrl × 2
 
+- 検索ダイアログで「ファイル名:行数」を打つと、その行数に移動
+
 ### Navigation
 
 基本的には **Cmd + 各種メニュー番号**
@@ -21,13 +23,36 @@
   - file structure
 - Cmd + 9
   - Git
+- 他にもテストを実行した後
+  - Cmd + 4 : Run
+  - Cmd + 5 : Debug
 
 ### Switch
 
 - Cmd + e で Recent files
 - 「Cmd + e」×2 で Recent Edited
+- Cmd + E -> Shift + Cmd + E で Recently Located
+- Ctrl + Tab で一つ前に切り替え
 
-他にもテストを実行した後に Cmd + 4 や Cmd + 5 で Run/Debug に移動できる
+### Jump
+
+- Ctrl + B
+  - 定義・参照ジャンプ(メソッドや変数<->実装)
+- Opt + Cmd + <F7>
+  - 参照検索
+- Cmd + L : ファイル内で行指定移動
+
+### Class Jump
+
+- Cmd + U : 親クラス
+- Opt + Cmd + U : クラス図を表示してジャンプ
+
+### Complement
+
+- Tab or Enter
+  - Tab : 置換
+  - Enter : 追記
+
 
 ## 参考
 - [IntelliJ shortcut pdf with Japanese](https://qiita.com/cypher256/items/8ce0527a46bd7cfe43eb)
