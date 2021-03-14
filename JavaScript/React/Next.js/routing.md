@@ -78,7 +78,7 @@ import Link from 'next/link'
 <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
 <Link href={{
   pathname: `/blog/[slug]`,
-  query: {slug: post.slug},
+  query: {slug: post.slug}
 }}>
 ```
 
