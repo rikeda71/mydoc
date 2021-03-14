@@ -75,11 +75,8 @@ import Link from 'next/link'
 // nested routes
 <Link href="/path/to/route">Text</Link>
 // dynamic routes
-<Link href={`/blog/${encodeURIComponent(post.slug)}`}>
-<Link href={{
-  pathname: `/blog/[slug]`,
-  query: {slug: post.slug}
-}}>
+<Link href={`/blog/${encodeURIComponent(post.slug)}`}>Text</Link>
+<Link href={pathname: `/blog/[slug]`,query: {slug: post.slug}}>Text</Link>
 ```
 
 ## Router
